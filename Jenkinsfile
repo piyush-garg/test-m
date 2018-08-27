@@ -10,8 +10,6 @@ def setupScript = null
 
 fabric8UINode {
   if (utils.isCI()) {
-
-    
     
     mavenCI{}
     
