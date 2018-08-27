@@ -16,7 +16,7 @@ mavenNode {
   } else if (utils.isCD()) {    
     
     container(name: 'maven') {
-      sh "npm version"
+      sh "node --version"
     }
   }
 }
