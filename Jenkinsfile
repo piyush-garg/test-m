@@ -8,14 +8,14 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-mavenNode {
+fabric8UINode {
   if (utils.isCI()) {
 
     mavenCI{}
     
   } else if (utils.isCD()) {    
     
-    container(name: 'maven') {
+    container(name: 'ui') {
       sh "node --version"
     }
   }
