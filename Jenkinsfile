@@ -16,6 +16,8 @@ fabric8UINode {
   } else if (utils.isCD()) {    
     
     container(name: 'ui') {
+      
+      
       sh "node --version"
     }
   }
