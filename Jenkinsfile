@@ -18,8 +18,7 @@ fabric8UINode {
       sh "ls"
       sh "pwd"
       sh "env"
-      sh "node --version"
-      sh "npm version"
+     
       sh "sleep infinity"
     }
   }
