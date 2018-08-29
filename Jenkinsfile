@@ -15,6 +15,8 @@ fabric8UINode {
     container(name: 'ui') {
       sh "ls /"
       sh "ls"
+      sh "pwd"
+      sh "echo $PATH"
       sh "npm version"
       sh "node --version"
     }
