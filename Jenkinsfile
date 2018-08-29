@@ -17,7 +17,8 @@ fabric8UINode {
       env
       echo \$SHELL
       which node
-      sleep infinity
+      npm version
+      node --version
       """
     }
   }
