@@ -13,6 +13,7 @@ fabric8UINode {
     mavenCI{}
   } else if (utils.isCD()) {    
     container(name: 'ui') {
+      sh "sleep infinity"
       sh "ls /"
       sh "ls"
       sh "pwd"
