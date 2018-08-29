@@ -18,8 +18,8 @@ fabric8UINode {
       sh "ls"
       sh "pwd"
       sh "env"
-      sh "/opt/rh/rh-nodejs8/root/usr/bin/node --version"
-      sh "/opt/rh/rh-nodejs8/root/usr/bin/npm version"
+      sh "node --version"
+      sh "npm version"
     }
   }
 }
