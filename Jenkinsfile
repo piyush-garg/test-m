@@ -20,6 +20,7 @@ fabric8UINode {
       sh "env"
       sh "node --version"
       sh "npm version"
+      sh "sleep infinity"
     }
   }
 }
