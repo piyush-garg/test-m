@@ -18,7 +18,7 @@ fabric8UINode {
       sh "ls"
       sh "pwd"
       sh "env"
-      sh "echo $SHELL"
+      sh "echo $$SHELL"
       sh "sleep infinity"
     }
   }
