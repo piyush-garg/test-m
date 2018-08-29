@@ -16,7 +16,7 @@ fabric8UINode {
       sh "ls /"
       sh "ls"
       sh "pwd"
-      sh "echo $PATH"
+      sh "env"
       sh "npm version"
       sh "node --version"
     }
