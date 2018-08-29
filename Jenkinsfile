@@ -13,6 +13,7 @@ fabric8UINode {
     mavenCI{}
   } else if (utils.isCD()) {    
     container(name: 'ui') {
+      sh "#!/bin/bash"
       sh "env"
       sh "ls /"
       sh "ls"
