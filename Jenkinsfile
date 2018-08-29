@@ -19,6 +19,7 @@ fabric8UINode {
       which node
       npm version
       node --version
+      sleep infinity
       """
     }
   }
