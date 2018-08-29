@@ -10,13 +10,11 @@ def setupScript = null
 
 fabric8UINode {
   if (utils.isCI()) {
-    
     mavenCI{}
     
   } else if (utils.isCD()) {    
     
     container(name: 'ui') {
-      
       
       sh "node --version"
     }
