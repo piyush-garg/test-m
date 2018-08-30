@@ -12,8 +12,8 @@ fabric8UINode {
   if (utils.isCI()) {
     mavenCI{}
   } else if (utils.isCD()) {    
-    container(name: 'ui') {
-      sh """#!/bin/bash
+    container(name: 'ui', shell: '/bin/bash') {
+      sh """
       env
       echo \$SHELL
       which node
