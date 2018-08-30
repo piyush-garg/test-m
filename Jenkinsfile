@@ -15,6 +15,7 @@ fabric8UINode {
     container(name: 'ui', shell: '/bin/bash') {
       sh """
       env
+      whoami
       echo \$SHELL
       which node
       npm version
