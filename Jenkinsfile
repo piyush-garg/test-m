@@ -15,8 +15,8 @@ nodejsNode {
       echo \$SHELL
       which node
       npm version
+      which npm
       node --version
-      sleep infinity
       """
   }
 }
