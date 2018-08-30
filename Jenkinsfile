@@ -8,11 +8,8 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-fabric8UINode {
-  if (utils.isCI()) {
-    mavenCI{}
-  } else if (utils.isCD()) {    
-    container(name: 'ui', shell: '/bin/bash') {
+nodejsNode {
+    container(name: 'nodejs', shell: '/bin/bash') {
       sh """
       env
       echo \$SHELL
@@ -21,6 +18,5 @@ fabric8UINode {
       node --version
       sleep infinity
       """
-    }
   }
 }
