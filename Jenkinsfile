@@ -9,7 +9,7 @@ def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
 mavenNode {
-    container(name: 'maven', shell: '/bin/bash') {
+    container(name: 'maven') {
       sh """
       env
       echo \$SHELL
