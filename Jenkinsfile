@@ -8,15 +8,13 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-nodejsNode {
-    container(name: 'nodejs') {
+mavenNode {
+    container(name: 'maven') {
       sh """
       env
       echo \$SHELL
-      which node
-      npm version
-      which npm
-      node --version
+      which mvn
+      mvn --version
       """
   }
 }
