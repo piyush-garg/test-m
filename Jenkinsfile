@@ -8,13 +8,18 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-mavenNode {
-    container(name: 'maven', shell: '/bin/bash') {
+nodejsNode {
+    container(name: 'nodejs', shell: '/bin/bash') {
       sh """
-      env
-      echo \$SHELL
-      which mvn
-      mvn --version
+      which --help
+      oc version
+      git help -g
+      tar --help
+      zip -h
+      unzip -h
+      npm version
+      node --version
+      ssh
       """
   }
 }
