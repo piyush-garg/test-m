@@ -19,7 +19,7 @@ nodejsNode {
       unzip -h
       npm version
       node --version
-      ssh
+      ssh -V
       """
   }
 }
