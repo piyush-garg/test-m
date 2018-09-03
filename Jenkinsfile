@@ -1,5 +1,4 @@
 #!/usr/bin/groovy
-
 @Library('github.com/piyush1594/fabric8-pipeline-library@newsyntax')
 def canaryVersion = "1.0.${env.BUILD_NUMBER}"
 def utils = new io.fabric8.Utils()
