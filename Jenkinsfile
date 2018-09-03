@@ -8,13 +8,7 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 osio {
-    ci {
-        app = processTemplate(release_version: "1.0.${env.BUILD_NUMBER}")
-        build app: app
-    }
-
     cd {
-      app = processTemplate(release_version: "1.0.${env.BUILD_NUMBER}")
       shell image: testnode, version: latest {
         sh """
           which --help
@@ -27,8 +21,5 @@ osio {
           node --version
         """
       }
-      build app: app
-      deploy app: app, env: 'stage'
-      //deploy app: app, env: 'run', approval: "manual"
     }
 }
