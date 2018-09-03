@@ -10,7 +10,7 @@ def setupScript = null
 
 osio {
     cd {
-      shell image: testnode, version: latest {
+      shell image: "piyushgarg/testnode", version: "latest" {
         sh """
           which --help
           oc version
