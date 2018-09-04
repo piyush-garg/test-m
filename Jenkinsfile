@@ -9,8 +9,8 @@ def setupScript = null
 
 osio {
     cd {
-      spawn (image: "openshift/jenkins-slave-nodejs-centos7", command : "
-        sh """
+      spawn (image: "openshift/jenkins-slave-nodejs-centos7", command : 
+        """
           which --help
           oc version
           git help -g
@@ -20,7 +20,6 @@ osio {
           npm version
           node --version
         """
-      "
       ) {
       }
     }
