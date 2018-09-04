@@ -7,8 +7,6 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-
-
 osio {
     cd {
       spawn (image: "piyushgarg/testnode", version: "latest") {
