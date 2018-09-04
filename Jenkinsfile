@@ -7,7 +7,6 @@ def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
 
-
 osio {
     cd {
       spawn (version: "openshift/jenkins-slave-nodejs-centos7") {
