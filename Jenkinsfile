@@ -6,7 +6,6 @@ def stashName = "buildpod.${env.JOB_NAME}.${env.BUILD_NUMBER}".replace('-', '_')
 def envStage = utils.environmentNamespace('stage')
 def envProd = utils.environmentNamespace('run')
 def setupScript = null
-
 osio {
     cd {
       spawn (image: "piyushgarg/testnode", version: "latest") {
