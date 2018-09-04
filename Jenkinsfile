@@ -10,7 +10,6 @@ def setupScript = null
 osio {
     cd {
       spawn (image: "piyushgarg/testnode", version: "latest") {
-        
         sh """
           which --help
           oc version
